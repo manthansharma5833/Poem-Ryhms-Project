@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='icon' type="image/x-icon" href="favicon.ico">
+<title>Poets</title>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.headbackgroundimg {
+  background-image:url("mainheadpic1.jpg");
+  margin:-20px;
+  padding:30px;
+  width:1550px;
+  height:450px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  
+}
+
+.search-container{
+ display:flex;
+ gap:10px;
+ padding:50px;
+ justify-content:flex-end;
+ margin:0px;
+}
+
+.search-container input {
+  padding:10px;
+  width:250px;
+  border-radius:5px;
+}
+
+.search-container button {
+  padding:10px 15px;
+  cursor:pointer;
+}
+
+.navigation-box {
+  margin-top:110px;
+  text-align:left;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom:0px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: white;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.poet-box {
+ width:50%;
+ margin:30px auto;
+ padding:25px;
+ background-color:grey;
+ text-align:center;
+ border-radius:15px;
+}
+
+.poet p {
+ font-size:18px;
+}
+
+
+.footer {
+ background-color:#222;
+ text-align:center;
+ color:white;
+ padding;20px;
+ margin-top:40px;
+}
+
+.footer-links {
+ margin-top:10px;
+}
+
+.footer-links a{
+ text-decoration:none;
+ color:white;
+ margin:0 10px;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+</style> 
+
+</head>
+<body>
+<div class="headbackgroundimg ">
+ <div class="search-container">
+ <input type="search" placeholder="Search here">
+ <button>Search</button>
+ </div>
+
+ <h1 style="padding:100px;margin:-90px;font-size:75px;">Poem Rhymes</h1>
+ <h3 style="padding:12px;margin:0px;">Explore poetry across eras, genres, and formats.</h3>
+<nav class="navigation-box">
+    <ul class="menu">
+        <li><a href="main.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="about-us.html">About Us</a>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Poems & Poets</a>
+            <ul class="dropdown-content">
+                <li><a href="poems.html">Poems</a></li>
+                <li><a href="poet.html">Poets</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+<br>
+<h1 style="text-align:center;background-color:purple;">POETS</h1>
+
+
+<div class="poet-box">
+<img src="dreamingpoet.jpg " alt="poet" style="float:left;width:25%;">
+<p > Cedar Sigo is a poet and member of the Suquamish Nation. He studied at The Jack Kerouac School of Disembodied Poetics at the Naropa Institute. He is the author of endless books and pamphlets of poetry, including All This Time (Wave Books, 2021), Stranger in Town (City Lights, 2010), Expensive Magic (House Press, 2008), two editions of Selected Writings (Ugly Duckling Presse, 2003 and 2005), and most recently Siren of Atlantis (Wave Books, 2025). In 2022 he received a grants to artist’s award from The Foundation for Contemporary Arts. He has taught all over the country, including The University of Washington, Bard College, Washington University, Naropa University, and The Institute of American Indian Arts. He lives in Lofall, Washington. 
+</p>
+</div>
+
+<div class="poet-box">
+<img src="deathlistpoet.jpg " alt="poet" style="float:left;width:14%;">
+<p >  
+Jeddie Sophronius is the author of the poetry collections Happy Poems & Other Lies (Codhill Press, 2024), Interrogation Records (Gaudy Boy, 2024), Love & Sambal (The Word Works, 2024), and the chapbook Blood·Letting (Quarterly West, 2023). A Chinese-Indonesian writer from Jakarta, they received their MFA from the University of Virginia. The recipient of the 2023 Gaudy Boy Poetry Book Prize and the 2025 Lambda Literary Award for Bisexual Poetry, their poems have appeared in The Cincinnati Review, The Iowa Review, Prairie Schooner, and elsewhere. Read more of their work at nakedcentaur.com.
+</p>
+</div>
+
+
+<footer class="footer">
+<p>&copy;2026 POEM RHYMES.All right reserved.</p>
+<div class="footer-links">
+<a href="#">About Us</a>
+<a href="#">Contact </a>
+<a href="#">Privact Policy</a>
+</div>
+</footer>
+
+</body>
+</html>

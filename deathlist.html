@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<link rel='icon' type="image/x-icon" href="favicon.ico">
+<title>Death List</title>
+
+<style>
+*{
+ margin:0px;
+ padding:0px;
+ box-sizing:border-box;
+}
+html, body{
+ width:100%;
+ overflow-x:hidden;
+}
+.headbackgroundimg {
+  background-image:url("mainheadpic1.jpg");
+  margin:-20px;
+  padding:30px;
+  width:1550px;
+  height:450px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  
+}
+
+.search-container{
+ display:flex;
+ gap:10px;
+ padding:50px;
+ justify-content:flex-end;
+ margin:0px;
+}
+
+.search-container input {
+  padding:10px;
+  width:250px;
+  border-radius:5px;
+}
+
+.search-container button {
+  padding:10px 15px;
+  cursor:pointer;
+}
+
+
+.navigation-box {
+  margin-top:110px;
+  text-align:left;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom:0px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: white;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.poem-box {
+ width:50%;
+ margin:30px auto;
+ padding:25px;
+ background-color:grey;
+ border-radius:15px;
+ text-align:center;
+}
+
+.poem-box h2 {
+ margin-bottom:20px;
+}
+
+.poem-box p{
+ font-size:18px;
+}
+
+.poem-line {
+white-space:pre-wrap;
+font-family:Georgia,serif;
+line-height:1.8;
+}
+
+.footer {
+background-color:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.footer-links {
+margin-top:10px;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer-links a:hover {
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="headbackgroundimg ">
+ <div class="search-container">
+ <input type="search" placeholder="Search here">
+ <button>Search</button>
+ </div>
+
+ <h1 style="padding:100px;margin:-90px;font-size:75px;">Poem Rhymes</h1>
+ <h3 style="padding:12px;margin:0px;">Explore poetry across eras, genres, and formats.</h3>
+<nav class="navigation-box">
+    <ul class="menu">
+        <li><a href="main.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="about-us.html">About Us</a>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Poems & Poets</a>
+            <ul class="dropdown-content">
+                <li><a href="poems.html">Poems</a></li>
+                <li><a href="poet.html">Poets</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+<br>
+
+
+<div class="poem-box">
+ <h1>Death List</h1>
+ <h2>Jeddie Sophronius</h2>
+
+ <p class="poem-line" >As many as 5,000 names were furnished over a period of months to the army there, and the Americans later checked off the names of those who had been killed or captured, according to the former U.S. officials… “No one cared, so long as they were communists, that they were being butchered,” said Howard Federspiel, who in 1965 was the Indonesia expert at the State Department’s bureau of intelligence and research. “No one was getting very worked up about it.”
+
+—Kathy Kadane, “U.S. Officials’ Lists Aided Indonesian Bloodbath in ’60s”,  The Washington Post, May 21, 1990
+
+          Lives perished, yet<br>
+nothing happened.<br>
+          Earth’s rotation<br>
+did not stop. It<br>
+          happened elsewhere,<br>
+somewhere distant:<br>
+          not here. It was<br>
+contained as in,<br>
+          the earthquake was<br>
+contained: struck a<br>
+          place much farther<br>
+than the distance<br>
+          the average man<br>
+would care. The dead<br>
+          was not our dead.<br>
+The dead were at<br>
+         fault. The dead were<br>
+our enemies,<br>
+          The dead chose wrong.<br>
+They weren’t alive<br>
+          to begin with. Nothing<br>
+happened. No one cared.<br>
+  
+</p>
+</div>
+<div style="clear:both;"></div>
+<hr>
+
+<div class="poem-box">
+<img src="deathlistpoet.jpg " alt="poet" style="float:left;width:18%;">
+<p >  
+Jeddie Sophronius is the author of the poetry collections Happy Poems & Other Lies (Codhill Press, 2024), Interrogation Records (Gaudy Boy, 2024), Love & Sambal (The Word Works, 2024), and the chapbook Blood·Letting (Quarterly West, 2023). A Chinese-Indonesian writer from Jakarta, they received their MFA from the University of Virginia. The recipient of the 2023 Gaudy Boy Poetry Book Prize and the 2025 Lambda Literary Award for Bisexual Poetry, their poems have appeared in The Cincinnati Review, The Iowa Review, Prairie Schooner, and elsewhere. Read more of their work at nakedcentaur.com.
+</p>
+</div>
+
+<footer class="footer">
+<p>&copy; 2026 Poem Rhymes. All Right Reserved.</p>
+
+<div class="footer-links">
+ <a href="#">About Us</a>
+ <a href="#">Contact</a>
+ <a href="#">Privacy Policy</a>
+</div>
+</footer>
+</body>
+</html>

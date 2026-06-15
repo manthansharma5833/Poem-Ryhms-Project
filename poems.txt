@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title>Poems</title>
+<link rel='icon' type="image/x-icon" href="favicon.ico">
+
+<style>
+.headbackgroundimg {
+  background-image:url("mainheadpic1.jpg");
+  margin:-20px;
+  padding:0px;
+  width:1550px;
+  height:450px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  
+}
+
+.search-container{
+ display:flex;
+ gap:10px;
+ padding:50px;
+ justify-content:flex-end;
+ margin:0px;
+}
+
+.search-container input {
+  padding:10px;
+  width:250px;
+  border-radius:5px;
+}
+
+.search-container button {
+  padding:10px 15px;
+  cursor:pointer;
+}
+
+.navigation-box {
+  margin-top:135px;
+  text-align:left;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom:0px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: white;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+<!-- MOVING LINE ANIMATION -->
+.marquee {
+ width:100%;
+ overflow:hidden;
+ white-space:nowrap;
+ 
+}
+
+.marquee p {
+ display:inline-block;
+ animation:scrollText 20s linear infinite;
+ color:red;
+}
+
+@keyframes scrollText {
+ from {
+  transform:translateX(250%);
+ }
+ to {
+  transform:translateX(-100%);
+ }
+}
+
+.footer {
+background-color:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.footer-links {
+margin-top:10px;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer-links a:hover {
+text-decoration:underline;
+}
+</style>
+</head>
+<body>
+
+<div class="headbackgroundimg ">
+ <div class="search-container">
+ <input type="search" placeholder="Search here">
+ <button>Search</button>
+ </div>
+
+ <h1 style="padding:100px;margin:-90px;font-size:75px;">Poem Rhymes</h1>
+ <h3 style="padding:12px;margin:0px;">Explore poetry across eras, genres, and formats.</h3>
+<nav class="navigation-box">
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+            <a href="#">About Us</a>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Poems & Poets</a>
+            <ul class="dropdown-content">
+                <li><a href="#">Poems</a></li>
+                <li><a href="poet.html">Poets</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+</body
+</html>

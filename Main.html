@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title>Poem Ryhms</title>
+<link rel='icon' type="image/x-icon" href="favicon.ico">
+
+<style>
+*{
+ margin:0px;
+ padding:0px;
+ box-sizing:border-box;
+}
+html, body {
+ width:100%;
+ overflow-x:hidden;
+}
+.headbackgroundimg {
+  background-image:url("mainheadpic1.jpg");
+  margin:-20px;
+  padding:30px;
+  width:1550px;
+  height:450px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  
+}
+
+.search-container{
+ display:flex;
+ gap:10px;
+ padding:50px;
+ justify-content:flex-end;
+ margin:0px;
+}
+
+.search-container input {
+  padding:10px;
+  width:250px;
+  border-radius:5px;
+}
+
+.search-container button {
+  padding:10px 15px;
+  cursor:pointer;
+}
+
+.navigation-box {
+  margin-top:110px;
+  text-align:left;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom:0px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: white;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+<!-- MOVING LINE ANIMATION -->
+.marquee {
+ width:100%;
+ overflow:hidden;
+ white-space:nowrap;
+ 
+}
+
+.marquee p {
+ display:inline-block;
+ animation:scrollText 20s linear infinite;
+ color:red;
+}
+
+@keyframes scrollText {
+ from {
+  transform:translateX(250%);
+ }
+ to {
+  transform:translateX(-100%);
+ }
+}
+
+.footer {
+background-color:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.footer-links {
+margin-top:10px;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer-links a:hover {
+text-decoration:underline;
+}
+</style>
+
+</head>
+<body>
+
+<div class="headbackgroundimg ">
+ <div class="search-container">
+ <input type="text" id='searchPoem()' placeholder="Search here">
+ <button onclick="searchPoem()">Search</button>
+ </div>
+
+ <h1 style="padding:100px;margin:-90px;font-size:75px;">Poem Rhymes</h1>
+ <h3 style="padding:12px;margin:0px;">Explore poetry across eras, genres, and formats.</h3>
+<nav class="navigation-box">
+    <ul class="menu">
+        <li><a href="default.asp">Home</a></li>
+
+        <li class="dropdown">
+            <a href="about-us">About Us</a>
+        </li>
+
+        <li class="dropdown">
+            <p>Poems & Poets</p>
+            <ul class="dropdown-content">
+                <li><a href="poems.html">Poems</a></li>
+                <li><a href="poet.html">Poets</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+<br>
+
+<!-- MOVING LINE -->
+<div class="marquee" style="background-color:yellow;">
+ <p style="font-size:15px">We add New Poems daily on this page.Latest Poem Added is  DeathList</p>
+</div>
+
+<h1>CATCH UP ON RECENT POEMS</h1><hr>
+
+<div> 
+<!-- Dreaming of Li Po -->
+ <div style="box-sizing:border-box">
+  <a href="dreamingoflipo.html"><img src="dreamingoflipro.jpg" alt="dreaming of li pro"  style="width:10%;margin:5px;float:left"></a>
+<p style="float:left;font-size:20px;" >June 4,2026<br>
+<a href="dreamingoflipo.html" style="text-decoration:none;color:black;"><b>Dreamimg of Li Pro</b></a><br>
+Cedar sigo<br>
+The city is run by enterprising zombies and occasional artists I choose to sit in the center of an empty white room as a half dead flower.
+</p>
+</div>
+<div style="clear:both"></div>
+<br>
+<hr>
+
+<div style="box-sizing:border-box;border-left:;">
+ <a href="deathlist.html"><img src="deathlist.jpg" alt="deathlist poem catalogue" style="width:10%;float:left;"></a>
+ <p style="float:left;font-size:20px;">June 3,2026<br>
+<a href="deathlist.html" style="text-decoration:none;color:black"><b>Death List</b></a><br>
+Jeddie Sophronius<br>
+lives perished,yet<br>
+nothing happened.
+</p>
+</div>
+</div>
+<div style="clear:both;"></div>
+<hr>
+<div style="clear:both;"></div>
+
+<footer class="footer">
+<p>&copy; 2026 Poem Rhymes. All Right Reserved.</p>
+
+<div class="footer-links">
+ <a href="#">About Us</a>
+ <a href="#">Contact</a>
+ <a href="#">Privacy Policy</a>
+</div>
+</footer>
+
+<script>
+function searchPoem(){
+ let text=document.getElementById("search");
+ let lower=toLowerCase(text);
+
+ if(lower==dreaming of li po){
+  document.getElementById("search").innerHTML="dreamingoflipo.html";
+} else {
+  document.getElementById("search").innerHTML="Deathlist";
+}
+</script>
+
+
+</body>
+</html>

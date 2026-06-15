@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title>Poem Ryhms</title>
+
+<style>
+.headbackgroundimg {
+  background-image:url("mainheadpic1.jpg");
+  margin:-20px;
+  padding:0px;
+  width:1550px;
+  height:450px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  
+}
+
+.search-container{
+ display:flex;
+ gap:10px;
+ padding:50px;
+ justify-content:flex-end;
+ margin:0px;
+}
+
+.search-container input {
+  padding:10px;
+  width:250px;
+  border-radius:5px;
+}
+
+.search-container button {
+  padding:10px 15px;
+  cursor:pointer;
+}
+
+.navbar{
+ position:absolute;
+ display:flex;
+ gap:30px;
+ bottom:200px;
+ display:flex;
+ margin:20px;
+}
+
+.navbar a {
+ text-decoration:none;
+ color:black;
+ font-size:18px;
+ margin-bottom:20px;
+}
+
+<!-- MOVING LINE ANIMATION -->
+.marquee {
+ width:100%;
+ overflow:hidden;
+ white-space:nowrap;
+ 
+}
+
+.marquee p {
+ display:inline-block;
+ animation:scrollText 20s linear infinite;
+ color:red;
+}
+
+@keyframes scrollText {
+ from {
+  transform:translateX(250%);
+ }
+ to {
+  transform:translateX(-100%);
+ }
+}
+</style>
+
+</head>
+<body>
+
+<div class="headbackgroundimg ">
+ <div class="search-container">
+ <input type="search" placeholder="Search here">
+ <button>Search</button>
+ </div>
+
+ <h1 style="padding:100px;margin:-90px;font-size:75px;">Poem Rhymes</h1>
+ <h3 style="padding:12px;margin:0px;">Explore poetry across eras, genres, and formats.</h3>
+<nav class="navbar">
+ <a href="#">About Us</a>
+ <a href="#">POETS & POEM</a>
+ <a href="#">HOME</a>
+</nav>
+</div>
+<br>
+
+<!-- MOVING LINE -->
+<div class="marquee" style="background-color:yellow;">
+ <p style="font-size:15px">This is a moving line that contains many new rythmes in the list so gets ready to read  new poems daily</p>
+</div>
+
+
+</body>
+</html>
